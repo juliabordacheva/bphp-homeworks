@@ -8,7 +8,7 @@ $middleName = $_POST['middleName'];
 $code = $_POST['code'];
 $codeWord = 'nd82jaake';
 $isCorrect = true;
-$patternLogin = '/\W/';
+$patternLogin = '/a-z0-9_-/';
 
 
 
@@ -25,15 +25,22 @@ if (!preg_match($patternEmail, $email)) {
     echo 'Почта должна быть формата почта@домен.доменнаязона <br>';
     $isCorrect = false;
 }
-if (strlen($firstName) === 0) {
+
+
+
+if( strlen(trim($firstName,' ')) == 0 ) {
     echo 'Поле Имя не может быть пустым <br>';
     $isCorrect = false;
 }
-if (strlen($lastName) === 0) {
+
+
+if( strlen(trim($lastName,' ')) == 0 ) {
     echo 'Поле Фамилия не может быть пустым <br>';
     $isCorrect = false;
 }
-if (strlen($middleName) === 0) {
+
+
+if( strlen(trim($middleName,' ')) == 0 ) {
     echo 'Поле Отчество не может быть пустым <br>';
     $isCorrect = false;
 }
