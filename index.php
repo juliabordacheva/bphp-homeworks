@@ -37,10 +37,19 @@
                 </ul>
             </li>
 
-             <li>Занятие 2.1. Введение в ООП
+             <li>Занятие 2.2. Введение в ООП
                 <ul>
                     <li><a href="2.2-OOP/2.2.1">Задание 2.2.1</a></li>
                     <li><a href="2.2-OOP/2.2.2">Задание 2.2.2</a></li>
+                    
+                </ul>
+            </li>
+
+              <li>Занятие 2.3. Даты. Сессии
+                <ul>
+                    <li><a href="2.3-dates-and-sessions/2.3.1-your-tube">Задание 2.3.1</a></li>
+                    <li><a href="2.3-dates-and-sessions/2.3.2-brute-protection">Задание 2.3.2</a></li>
+                     <li><a href="2.3-dates-and-sessions/2.3.3-additional">Задание 2.3.3</a></li>
                     
                 </ul>
             </li>
