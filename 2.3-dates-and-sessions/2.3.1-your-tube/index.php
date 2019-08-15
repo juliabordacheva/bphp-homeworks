@@ -9,7 +9,6 @@
         $views = include 'views.php';
         return (int) $views;
     }
-
     /**
      * Функция увеличивает количество просмотров на 1
      *
@@ -21,40 +20,21 @@
         $data = "<?php \r\nreturn {$views};";
         file_put_contents('views.php', $data);
     }
-
     /**
      * Функция проверяет, нужно ли увеличивать число просмотров
      *
      * @return bool
      */
-    function shouldBeIncremented(): bool {
-    
-    $views = getViews();
-    if (!isset($_COOKIE['time'])) {
-        addTimeToCookie();
-        incrementViews($views);
+    function shouldBeIncremented(): bool
+    {
+        $time = time();
+        $timesAll = isset($_COOKIE['time']) ? $_COOKIE['time'] : 0;
+        setcookie('time', $time);
+        return (($time - $timesAll) >= 300); 
     }
-
-
-    $startTime = time();
-    $timestamp = $_COOKIE['time'];
-
-    
-    if ($startTime - $timestamp >= 300) {
-        incrementViews($views);
-        addTimeToCookie();
-        return true;
-    } else {
-        return false;
+    if (shouldBeIncremented()){
+        incrementViews(getViews());
     }
-}
-
-function addTimeToCookie() {
-    setcookie('time', time());
-}
-shouldBeIncremented();
-
-    //
 ?>
 
 <!DOCTYPE html>
