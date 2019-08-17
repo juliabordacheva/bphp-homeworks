@@ -3,7 +3,7 @@
         protected $fileName;
         protected $file;
         public function __construct($fileName) {
-            $this->fileName = 'files/new.json';
+            $this->fileName = DATABASE_PATH.$fileName.'.json';
         }
         private function connect() {
             if ($this->file == NULL) {
