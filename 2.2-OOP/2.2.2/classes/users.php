@@ -9,7 +9,7 @@ class Users extends JsonDataArray
     
     public function displaySortedList()
     {
-        foreach($this->$dataArray as $user)
+        foreach($this->dataArray as $user)
             {
               echo $user, '<br>';
             }
