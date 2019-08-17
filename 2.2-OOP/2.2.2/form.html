@@ -19,22 +19,22 @@
   </style>
 </head>
 <body>
-<form action="formActions/addUser.php" method="post">
-   <h3>Создать пользователя</h3>
-  <label for="username">Имя:
-  <input type="text" name="name" placeholder="Имя" required> </label>
+<form action="formActions/addUsers.php" method="post">
+  <h3>Создать пользователя</h3>
+  <label for="username">Имя:</label>
+  <input id="username" type="text" name="username" placeholder="Имя" required>
 
-  <label for="parol">Пароль:
-  <input type="text" name="parol" placeholder="Пароль" required> </label>
+  <label for="password">Пароль:</label>
+  <input id="password" type="password" name="password" placeholder="Пароль" required>
 
-  <label for="email">Электронная почта:
-  <input type="text" name="email" placeholder="Электронная почта" required> </label>
+  <label for="email">Электронная почта:</label>
+  <input id="email" type="email" name="email" placeholder="Электронная почта" required>
 
-  <label for="rating">Рейтинг:
-  <input type="text" name="rating" placeholder="Рейтинг" required> </label>
-
-
+  <label for="rating">Рейтинг:</label>
+  <input id="rating" type="text" name="rating" placeholder="Рейтинг" required>
   <button type="submit">Добавить пользователя</button>
 </form>
+
+<?php include 'index.php'; ?>
 </body>
 </html>

@@ -3,7 +3,7 @@
         protected $fileName;
         protected $file;
         public function __construct($fileName) {
-            $this->fileName = $this->fileName = parent::DATABASE_PATH.$fileName.'.json';
+            $this->fileName = $this->fileName = Config::DATABASE_PATH.$fileName.'.json';
         }
         private function connect() {
             var_dump($this->file);
