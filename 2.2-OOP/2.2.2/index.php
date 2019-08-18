@@ -10,21 +10,7 @@ require_once 'config/SystemConfig.php';
 <head>
     <meta charset="UTF-8">
     <title>Регистрация</title>
-    <style type="text/css">
-
-        form {
-            margin-left: 200px;
-        }
-
-        input {
-            display: block;
-            margin-top: 10px;
-        }
-
-        button {
-            margin-top: 10px;
-        }
-    </style>
+    <link rel="stylesheet" type="text/css" href="main.css" >
 </head>
 <body>
 <?php require_once 'form.html' ?>

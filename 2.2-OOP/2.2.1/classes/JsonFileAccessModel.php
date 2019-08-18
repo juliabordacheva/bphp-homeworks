@@ -8,7 +8,7 @@
         private function connect() {
             if ($this->file == NULL) {
                 if (fopen($this->fileName,'r+') == FALSE) {
-                    echo 'error during opeining file';
+                    echo 'error during opening file';
                 }else {                    
                     $this->file = fopen($this->fileName,'r+');
                 } 
