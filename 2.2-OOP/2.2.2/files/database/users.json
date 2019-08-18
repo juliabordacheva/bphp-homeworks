@@ -1,6 +1,6 @@
 {
     "dataTitle": {
-        "last_guid": 22
+        "last_guid": 24
     },
     "dataArray": {
         "o5": {
@@ -74,6 +74,18 @@
             "email": "\u0435\u043d\u0433\u0435\u043d\u0433\u0435\u043d\u0433\u0435\u043d\u0433",
             "password": "somemail@email.com",
             "rate": "\u0443\u0432\u043a\u0435"
+        },
+        "o23": {
+            "name": "juliabordacheva",
+            "email": "tyutyutyu",
+            "password": "somemail@email.com",
+            "rate": "4"
+        },
+        "o24": {
+            "name": "juliiabordacheva",
+            "email": "sdfsdfsdf",
+            "password": "somemail@email.com",
+            "rate": "3"
         }
     }
 }

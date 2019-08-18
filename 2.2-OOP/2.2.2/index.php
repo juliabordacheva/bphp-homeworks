@@ -10,7 +10,7 @@ require_once 'config/SystemConfig.php';
 <head>
     <meta charset="UTF-8">
     <title>Регистрация</title>
-    <link rel="stylesheet" type="text/css" href="main.css" >
+    <link rel="stylesheet" type="text/css" href="main.css">
 </head>
 <body>
 <?php require_once 'form.html' ?>
