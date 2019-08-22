@@ -13,6 +13,11 @@ require_once 'config/SystemConfig.php';
     <link rel="stylesheet" type="text/css" href="main.css">
 </head>
 <body>
-<?php require_once 'form.html' ?>
+<?php
+require_once 'form.html';
+
+$users = new Users;
+$users->displaySortedList();
+?>
 </body>
 </html>

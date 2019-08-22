@@ -1,5 +1,4 @@
 <?php
-
 class JsonDataArray
 {
     private $file;
@@ -275,3 +274,4 @@ class JsonDataArray
         return $this;
     }
 }
+

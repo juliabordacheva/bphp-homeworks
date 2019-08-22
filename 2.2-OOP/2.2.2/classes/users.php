@@ -2,16 +2,11 @@
 
 class Users extends JsonDataArray
 {
-    public function __construct()
-    {
-        parent::__construct();
-    }
-
-    public function displaySortedList()
-    {
-        foreach ($this->dataArray as $user) {
-            echo $user, '<br>';
+    public function displaySortedList(){
+        foreach ($this->newQuery()->orderBy('name')->getObjs() as $data){
+            echo '<div>' . '<h3>'. $data->name .'</h3>' . '</div>';
+            echo '<div>e-mail: ' . $data->email  . '</div>';
+            echo '<div>rate: ' . $data->rate  . '</div>' . '<hr>';
         }
     }
-
 }

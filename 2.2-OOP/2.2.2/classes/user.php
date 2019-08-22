@@ -3,21 +3,16 @@
 class User extends DataRecordModel
 {
     public $name;
-    public $email;
     public $password;
+    public $email;
     public $rate;
-    public function __construct($name, $email, $password, $rate)
-    {
-        parent::__construct();
-        $this->name = $name;
-        $this->email = $email;
-        $this->password = $password;
-        $this->rate = $rate;
+
+
+    public function addUserFromForm(){
+        $this->name = $_POST['name'];
+        $this->password = $_POST['password'];
+        $this->email = $_POST['email'];
+        $this->rate = (int)$_POST['rate'];
+        $this->commit();
     }
-    
-    public function addUserFromForm()
-    {
-        parent::commit();
-    }
-    
 }

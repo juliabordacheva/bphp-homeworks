@@ -7,7 +7,7 @@ class JsonFileAccessModel extends Config
 
     public function __construct($fileName)
     {
-        $this->fileName = Config::DATABASE_PATH . $fileName . '.json';
+        $this->fileName = $_SERVER['DOCUMENT_ROOT'] . Config::DATABASE_PATH . $fileName . '.json';
     }
 
     private function connect()
